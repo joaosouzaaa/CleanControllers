@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanControllers.API", "CleanControllers.API\CleanControllers.API.csproj", "{4E4B9E76-9B50-4FE6-95D7-CFD0D030CD57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9A23BBFC-0EA3-4537-B09D-CE51146FB4CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{6873B2FC-FE4F-460F-A311-21974DB814CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E4B9E76-9B50-4FE6-95D7-CFD0D030CD57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4B9E76-9B50-4FE6-95D7-CFD0D030CD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4B9E76-9B50-4FE6-95D7-CFD0D030CD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4B9E76-9B50-4FE6-95D7-CFD0D030CD57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6873B2FC-FE4F-460F-A311-21974DB814CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6873B2FC-FE4F-460F-A311-21974DB814CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6873B2FC-FE4F-460F-A311-21974DB814CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6873B2FC-FE4F-460F-A311-21974DB814CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6873B2FC-FE4F-460F-A311-21974DB814CF} = {9A23BBFC-0EA3-4537-B09D-CE51146FB4CA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C53848AD-1049-47FA-A3A9-D9F2054819B9}
+	EndGlobalSection
+EndGlobal
