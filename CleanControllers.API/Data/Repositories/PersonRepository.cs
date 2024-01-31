@@ -7,8 +7,7 @@ namespace CleanControllers.API.Data.Repositories;
 
 public sealed class PersonRepository(CleanControllersDbContext dbContext) : IPersonRepository, IDisposable
 {
-    private readonly CleanControllersDbContext _dbContext = dbContext;
-    private DbSet<Person> DbContextSet => _dbContext.Set<Person>();
+    private DbSet<Person> DbContextSet => dbContext.Set<Person>();
 
     public async Task<bool> AddAsync(Person person)
     {
@@ -19,7 +18,7 @@ public sealed class PersonRepository(CleanControllersDbContext dbContext) : IPer
 
     public async Task<bool> UpdateAsync(Person person)
     {
-        _dbContext.Entry(person).State = EntityState.Modified;
+        dbContext.Entry(person).State = EntityState.Modified;
 
         return await SaveChangesAsync();
     }
@@ -51,11 +50,11 @@ public sealed class PersonRepository(CleanControllersDbContext dbContext) : IPer
 
     public void Dispose()
     {
-        _dbContext.Dispose();
+        dbContext.Dispose();
 
         GC.SuppressFinalize(this);
     }
 
     private async Task<bool> SaveChangesAsync() =>
-        await _dbContext.SaveChangesAsync() > 0;
+        await dbContext.SaveChangesAsync() > 0;
 }
